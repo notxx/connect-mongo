@@ -25,16 +25,17 @@
     "mongodb": ">= 2.0 <3.0.0"
   },
   "devDependencies": {
+    "@types/mongodb": "^2.1.36",
+    "@types/node": "0.0.2",
     "expect.js": "^0.3.1",
     "express-session": ">= 1.0.0",
-    "istanbul": "^0.4.1",
     "mocha": "^2.3.4",
     "mongoose": ">= 2.6.0 < 5.0",
     "tslint": "^4.0.2",
     "typescript": "^2.0.10"
   },
   "scripts": {
-    "test-unit": "node node_modules/mocha/bin/mocha dist",
-    "prepublish": "node node_modules/typescript/bin/tsc"
+    "test-unit": "npm build && node node_modules/mocha/bin/mocha",
+    "build": "node node_modules/typescript/bin/tsc"
   }
 }

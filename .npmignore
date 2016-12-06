@@ -1,10 +1,14 @@
 .npmignore
+.travis.yml
+.vscode/
+tsconfig.json
 
-History.md
+CHANGELOG.md
 Makefile
-Readme.md
+README.md
 
 examples/
+src/
 support/
 test/
 coverage/
